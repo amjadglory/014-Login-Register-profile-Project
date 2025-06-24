@@ -13,35 +13,99 @@
       <h1 class="mb-3">Smart Login System</h1>
       <form id="inputs">
         <input
-          type="name"
-          class="customInput mb-3 text-white"
+          oninput="validation(this , 'nameValidMsg', 'nameInvalidMsg' )"
+          type="text"
+          class="customInput mt-3 text-white"
           id="name"
           placeholder="Enter your name"
         />
+        <p
+          id="nameInvalidMsg"
+          class="bg-danger-subtle text-danger rounded-1 text-start ps-1 mt-1 d-none"
+        >
+          <i class="fa-solid fa-circle-exclamation"></i>
+          Name should starts with one uppercase letter, followed by 2-25
+          lowercase letters. Example: "Amjad"
+        </p>
+        <p
+          id="nameValidMsg"
+          class="bg-success-subtle text-success rounded-1 text-start ps-1 mt-1 d-none"
+        >
+          <i class="fa-solid fa-square-check"></i>
+          Name is valid
+        </p>
         <input
+          oninput="validation(this , 'mailValidMsg', 'mailInvalidMsg' )"
           type="email"
-          class="customInput mb-3 text-white"
+          class="customInput mt-3 text-white"
           id="email"
           placeholder="Enter your email"
         />
+        <p
+          id="mailInvalidMsg"
+          class="bg-danger-subtle text-danger rounded-1 text-start ps-1 mt-1 d-none"
+        >
+          <i class="fa-solid fa-circle-exclamation"></i>
+          Write valid Email
+        </p>
+        <p
+          id="mailValidMsg"
+          class="bg-success-subtle text-success rounded-1 text-start ps-1 mt-1 d-none"
+        >
+          <i class="fa-solid fa-square-check"></i>
+          Email is valid
+        </p>
         <input
+          oninput="validation(this , 'passValidMsg', 'passInvalidMsg' )"
           type="password"
-          class="customInput mb-3 text-white"
+          class="customInput mt-3 text-white"
           id="pass"
           placeholder="Enter your password"
         />
-        <p id="exists" class="mb-4 d-none"><span class="text-danger">email already exists</span></p>
-        <p id="success" class="mb-4 d-none"><span class="text-success">Sign Up Success</span></p>
-        <ul id="incorrect" class="text-danger p-2 d-none">
-          <li>Name should starts with one uppercase letter, followed by 2-25 lowercase letters. Example: "Amjad"</li>
+        <p
+          id="passInvalidMsg"
+          class="bg-danger-subtle text-danger rounded-1 text-start ps-1 mt-1 d-none"
+        >
+          <i class="fa-solid fa-circle-exclamation"></i>
+          Password Must have 3-9 digits, optionally ending with one lowercase
+          letter. Example: "123" or "123a"
+        </p>
+        <p
+          id="passValidMsg"
+          class="bg-success-subtle text-success rounded-1 text-start ps-1 mt-1 d-none"
+        >
+          <i class="fa-solid fa-square-check"></i>
+          Password is valid
+        </p>
+        <p id="exists" class="mb-4 d-none">
+          <span class="text-danger">email already exists</span>
+        </p>
+        <p id="success" class="mb-4 d-none">
+          <span class="text-success">Sign Up Success</span>
+        </p>
+        <!-- <ul id="incorrect" class="text-danger p-2 d-none">
+          <li>
+            Name should starts with one uppercase letter, followed by 2-25
+            lowercase letters. Example: "Amjad"
+          </li>
           <li>Write valid Email</li>
-          <li>3-9 digits, optionally ending with one lowercase letter. Example: "123" or "123a"</li>
+          <li>
+            3-9 digits, optionally ending with one lowercase letter. Example:
+            "123" or "123a"
+          </li>
           <li>All inputs are required</li>
-        </ul>
-        <a  id="signUpBtn" class="customBtn w-100 mt-2">Sign Up</a>
+        </ul> -->
+        <a id="signUpBtn" class="customBtn w-100 mt-3">Sign Up</a>
       </form>
-      <p class="text-white mt-3">You have an account? <a href="./index.html" id="signIn" class="text-white text-decoration-none">Signin</a></p>
-
+      <p class="text-white mt-3">
+        You have an account?
+        <a
+          href="./index.html"
+          id="signIn"
+          class="text-white text-decoration-none"
+          >Signin</a
+        >
+      </p>
     </div>
 
     <script src="js/signUp.js"></script>
