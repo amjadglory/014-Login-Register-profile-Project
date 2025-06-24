@@ -63,7 +63,7 @@ function addUser() {
 signUpBtn.addEventListener("click", function () {
   if (addUser()) { // لو الاادد يوزر رجعت ترو
     addUser(); // شغل فنكتشن الااد يوزر
-    signUpBtn.setAttribute("href", "../index.html"); // روح ع صفحه البروفايل 
+    signUpBtn.setAttribute("href", "./index.html"); // روح ع صفحه البروفايل 
     existsWarning.classList.add("d-none");
     incorrectWarning.classList.add("d-none");
     successWarning.classList.remove("d-none");

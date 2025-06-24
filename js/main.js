@@ -29,7 +29,7 @@ loginBtn.addEventListener("click", function () {
         passInput.value === users[i].pass
       ) {
         console.log("lol");
-        loginBtn.setAttribute("href", "../profile.html");
+        loginBtn.setAttribute("href", "./profile.html");
         localStorage.setItem("currntUser", JSON.stringify(users[i]));
         return;
       } else {
