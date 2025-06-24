@@ -85,8 +85,8 @@ h1{
 }
 #loginCard {
   width: 61%;
-    box-shadow: -5px 2px 40px -9px rgba(0, 0, 0, 1);
-
+  box-shadow: -5px 2px 40px -9px rgba(0, 0, 0, 1);
+  margin-top: 50px;
 }
 li{
   margin-left: 0;
