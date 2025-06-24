@@ -31,6 +31,8 @@ loginBtn.addEventListener("click", function () {
         console.log("lol");
         loginBtn.setAttribute("href", "./profile.html");
         localStorage.setItem("currntUser", JSON.stringify(users[i]));
+        requiredWarning.classList.add("d-none");
+        incorrectWarning.classList.add("d-none");
         return;
       } else {
         requiredWarning.classList.add("d-none");
