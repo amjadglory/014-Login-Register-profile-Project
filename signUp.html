@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/signUp.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div id="loginCard" class="mx-auto mt-5 p-5 text-center">
+      <h1 class="mb-3">Smart Login System</h1>
+      <form id="inputs">
+        <input
+          type="name"
+          class="customInput mb-3 text-white"
+          id="name"
+          placeholder="Enter your name"
+        />
+        <input
+          type="email"
+          class="customInput mb-3 text-white"
+          id="email"
+          placeholder="Enter your email"
+        />
+        <input
+          type="password"
+          class="customInput mb-3 text-white"
+          id="pass"
+          placeholder="Enter your password"
+        />
+        <p id="exists" class="mb-4 d-none"><span class="text-danger">email already exists</span></p>
+        <p id="success" class="mb-4 d-none"><span class="text-success">Sign Up Success</span></p>
+        <ul id="incorrect" class="text-danger p-2 d-none">
+          <li>Name should starts with one uppercase letter, followed by 2-25 lowercase letters. Example: "Amjad"</li>
+          <li>Write valid Email</li>
+          <li>3-9 digits, optionally ending with one lowercase letter. Example: "123" or "123a"</li>
+          <li>All inputs is required</li>
+        </ul>
+        <a  id="signUpBtn" class="customBtn w-100 mt-2">Sign Up</a>
+      </form>
+      <p class="text-white mt-3">You have an account? <a href="./index.html" id="signIn" class="text-white text-decoration-none">Signin</a></p>
+
+    </div>
+
+    <script src="js/signUp.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

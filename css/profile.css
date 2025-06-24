@@ -1,0 +1,31 @@
+/*! fonts */
+@font-face {
+  font-family: titi;
+  src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
+/*! css variables */
+:root {
+  --mainColor: #24353f;
+  --secondaryColor: #17a2b8;
+  --mainFont: titi;
+}
+
+/*! custom classes */
+
+/* style */
+body {
+  background-color: var(--mainColor) !important;
+  font-family: var(--mainFont) !important;
+}
+h1 {
+  color: var(--secondaryColor) !important;
+}
+#profileCard {
+  width: 61%;
+  
+  box-shadow: -5px 2px 40px -9px rgba(0, 0, 0, 1);
+}
+nav{
+  box-shadow: -5px 2px 40px -9px rgba(0, 0, 0, 1);
+
+}
